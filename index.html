@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="homePage" class="homePage">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <title>Colby Gallagher</title>
+    </head>
+    <body>
+      <div id="nav" class="nav">
+        <nav>
+          <div class="logo">
+            <img src="resources/ColbyProfileSquare.jpg" alt="user" />
+          </div>
+          <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <header>
+        <button id="toggle" class="toggle">
+          <i class="fa fa-bars 2x"></i>
+        </button>
+        <h1>Colby Gallagher</h1>
+        <p>
+          Digital Engineering Manager. Structural Engineer.
+        </p>
+        <button class="cta-btn" id="open">Subscribe</button>
+      </header>
+      <div class="container">
+        <h2>About me</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt cum
+          officia laboriosam debitis iste, possimus aperiam pariatur maiores
+          officiis minus ducimus doloremque perferendis inventore consequuntur
+          rem accusantium consectetur magni facilis?
+        </p>
+      </div>
+
+      <!-- MOdal -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+          <button class="close-btn" id="close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="modal-header">
+            <h3>Subscribe</h3>
+          </div>
+          <div class="modal-content">
+            <p>Enter your name and email address to get the latest updates</p>
+            <form action="" class="modal-form">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter name"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter email"
+                  class="form-input"
+                />
+              </div>
+
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </div>
+
+  <div class="blogPage" id="blogPage" style="display: none;">
+    <p>hello im the blog</p>
+  </div>
+</html>

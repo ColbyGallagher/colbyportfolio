@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="homePage" class="homePage">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+        crossorigin="anonymous"
+      />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="styleContact.css" />
+      <title>Contact me</title>
+    </head>
+    <body>
+      <div>
+        <nav id="slider" class="slider">
+          <div class="logo">
+            <img src="resources/ColbyProfileSquare.jpg" alt="user" />
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a class="current" href="contact.html">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <header>
+        <button id="toggle" class="toggle">
+          <i class="fa fa-bars 2x"></i>
+        </button>
+        <h1>Contact me</h1>
+
+        <button class="cta-btn" id="open">Subscribe</button>
+      </header>
+      <div class="container">
+        <h2>LinkedIn</h2>
+        <a href="https://www.linkedin.com/in/colby-gallagher/"
+          >Follow me on LinkedIn</a
+        >
+        <p></p>
+        <h2>GitHub</h2>
+        <a href="https://github.com/ColbyGallagher">Check out my GitHub</a>
+      </div>
+
+      <!-- MOdal -->
+      <div class="modal-container" id="modal">
+        <div class="modal">
+          <button class="close-btn" id="close">
+            <i class="fa fa-times"></i>
+          </button>
+          <div class="modal-header">
+            <h3>Subscribe</h3>
+          </div>
+          <div class="modal-content">
+            <p>Enter your name and email address to get the latest updates</p>
+            <form action="" class="modal-form">
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Enter name"
+                  class="form-input"
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter email"
+                  class="form-input"
+                />
+              </div>
+
+              <input type="submit" value="Submit" class="submit-btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+    </body>
+  </div>
+
+  <div class="blogPage" id="blogPage" style="display: none;">
+    <p>hello im the blog</p>
+  </div>
+</html>
